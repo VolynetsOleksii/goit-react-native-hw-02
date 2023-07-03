@@ -1,6 +1,6 @@
 import { StyleSheet, View, Image } from "react-native";
 // import PostsScreen from './Screens/PostsScreen/PostsScreen';
-// import RegistrationScreen from "./Screens/RegistrationScreen/RegistrationScreen";
+import RegistrationScreen from "./Screens/RegistrationScreen/RegistrationScreen";
 import { useFonts } from "expo-font";
 import LoginScreen from "./Screens/LoginScreen/LoginScreen";
 
@@ -19,7 +19,7 @@ export default function App() {
         resizeMode="cover"
         style={styles.image}
       />
-      <RegistrationScreen />
+      <LoginScreen />
     </View>
   );
 }
