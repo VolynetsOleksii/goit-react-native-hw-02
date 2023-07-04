@@ -1,13 +1,14 @@
 import { StyleSheet, View, Image } from "react-native";
-// import PostsScreen from './Screens/PostsScreen/PostsScreen';
+import PostsScreen from "./Screens/PostsScreen/PostsScreen";
 import RegistrationScreen from "./Screens/RegistrationScreen/RegistrationScreen";
-import { useFonts } from "expo-font";
 import LoginScreen from "./Screens/LoginScreen/LoginScreen";
+import { useFonts } from "expo-font";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
     "Roboto-Medium": require("./assets/fonts/Roboto-Medium.ttf"),
     "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+    "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
   });
   if (!fontsLoaded) {
     return null;
@@ -19,7 +20,7 @@ export default function App() {
         resizeMode="cover"
         style={styles.image}
       />
-      <LoginScreen />
+      <PostsScreen />
     </View>
   );
 }
