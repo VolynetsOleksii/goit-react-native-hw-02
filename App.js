@@ -20,7 +20,7 @@ export default function App() {
         resizeMode="cover"
         style={styles.image}
       />
-      <PostsScreen />
+      <RegistrationScreen />
     </View>
   );
 }
